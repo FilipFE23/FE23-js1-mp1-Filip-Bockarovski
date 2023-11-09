@@ -1,3 +1,4 @@
+// Raderna
 for (i=1; i<6; i++){
     let hue = 120 + i * 15;
     let size = i;
@@ -13,6 +14,7 @@ for (i=1; i<6; i++){
     document.body.appendChild(h1El);
 };
 
+// Huvud boxen till nummer boxarna
 let div = document.createElement('div');
 
 div.style.border = '2px solid black';
@@ -23,6 +25,7 @@ div.style.justifyContent = 'space-evenly';
 
 document.body.appendChild(div);
 
+// Nummer boxarna
 for (i=1; i<4; i++){
     let box = document.createElement('div');
 
@@ -32,6 +35,7 @@ for (i=1; i<4; i++){
 
     div.appendChild(box);
     
+    // Nummer box 1
     if (i==1){
         for (y=0; y<10; y++){
             let pEl = document.createElement('p');
@@ -52,6 +56,8 @@ for (i=1; i<4; i++){
             };
         };
     }
+    
+    // Nummer box 2
     else if (i==2){
         for (y=9; y>=0; y--){
             let pEl = document.createElement('p');
@@ -73,6 +79,8 @@ for (i=1; i<4; i++){
             };
         };
     }
+
+    // Nummer box 3
     else if (i==3){
         for (y=0; y<10; y++){
             let pEl = document.createElement('p');
